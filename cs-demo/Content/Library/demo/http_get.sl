@@ -5,13 +5,12 @@ operation:
 
     inputs:
       - url
-      - user
-      - password
+
 
     python_action:
         script: |
           import requests
-          r = request.get(url, auth=(user, password))
+          r = request.get(url)
           status_code = r.status_code
           json = r.json()
           text = r.text
