@@ -20,8 +20,8 @@ operation:
     outputs:
       - status_code: ${status_code}
       - json: ${json}
-      - text = ${text}
-      - headers = ${headers}
+      - text:  ${text}
+      - headers: ${headers}
 
 
     results:
